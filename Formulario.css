@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+
+ }
+
+ body{
+    background-image: url(imagenes/limpieza.png);
+    color: rgb(241, 241, 248);
+    font-family: "Quicksand variant0", Tofu;
+     padding: 0  1.5em ;
+
+ }
+ .content{
+  max-width: 1170px; 
+  margin-left: auto; 
+  margin-right: auto;
+  padding: 1.5em;
+ }
+ 
+ .logo{
+    text-align: center;
+    font-size: 3em;
+ }
+
+ .contact-wrapper{
+   box-shadow: 0 0 20px 0 rgb(245, 241, 241); 
+ } 
+
+ .contact-wrapper > *{
+    padding: 1em ;
+ }
+
+ .contact-form{
+    background-color: #222222;
+ }
+ 
+
+ h3{
+    background-color: rgb(32, 17, 240);
+    border-radius: 10px;
+ }
+
+ .contact-form form{
+  margin: 0;  
+  padding: 1rem;
+ }
+
+ .contact-form form button,
+ .contact-form form input,
+ .contact-form form textarea{
+ width: 100%;
+ padding: .7em;
+ border: none;
+ background:  none;
+ outline: 0;
+ color: rgb(252, 252, 255);
+ border-bottom: 1px solid rgb(92, 140, 244);
+ }
+ .contact-form form button{
+    background-color:rgb(104, 184, 238); ;
+    border: 0;
+    text-transform: uppercase ;
+    padding: 1em;
+    border-radius: 10px;
+ }
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background-color: rgb(220, 91, 234) ;
+    color:rgb(19, 18, 18);
+    transition: background-color 1s ease-out ;
+    outline: 0; 
+}
+
+.contact-info{
+background-color: #000;
+}
+ .contact-info h4,
+ .contact-info ul,
+ .contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0 ;
+ }
+
+ .contact-info ul{
+    list-style: none; 
+    padding: 0;
+ }
+
+ .contact-info ul li{
+    padding: .5rem;
+ }
+
+ /* LARGE SCREEN */
+ @media (min-widt: 700px){ 
+ body{
+    padding: 0 4rem;
+ }
+ .contact-wrapper{
+    display: grid;
+    grid-template-areas: 2fr 1fr;
+ }
+ .contact-wrapper > *{
+    padding: 2em;
+ }
+ .contact-info h4,
+ .contact-info ul,
+ .contact-info p{
+    padding: 1rem;
+    text-align: center;
+ }
+ }
+    
+ nav a{
+   color: white;
+   text-shadow: 4px 4px 4px rgb(236, 237, 243);
+   display: flex;
+   flex-direction: row;
+   text-decoration: none;
+   padding: 20px 20px;           /* margenes */
+   font-size: 30px;
+ }
+  
+ /* flex-wrap: wrap; */        /* ajusta el contenido */

@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Quicksand variant0", tofu;
+    background-color: rgb(212, 246, 211);
+    font-size: 1.375rem;
+}
+
+img{
+    border-radius: 10px;
+    margin: 20px;
+}
+    
+header{
+    background-color: rgb(2, 194, 253);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+ul{ 
+    margin-left: 30%;   
+}
+
+p{
+    text-align: center;
+}
+
+h2{
+    background-color: rgb(2, 194, 253);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.muebles .antes{
+    flex: 30%;
+    background-color: rgb(131, 128, 129);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 1%;
+    justify-content: center;
+}
+
+.muebles .despues{
+    flex: 30%;
+    background-color: rgb(78, 131, 255);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 3%;
+ 
+}
+
+
+@media screen and (max-width:700px)  {
+    nav, header, .muebles, .antes, .despues {
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+    html{
+       font-size: 16px
+    }
+    
+
+}
+
+
+
+nav a{
+    color: rgb(0, 0, 0);
+    text-shadow: 4px 4px 4px rgb(13, 49, 250);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 20px 20px;           /* margenes */
+    font-size: 30px;
+  }
+
